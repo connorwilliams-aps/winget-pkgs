@@ -187,14 +187,9 @@ if (-Not [String]::IsNullOrWhiteSpace($Manifest)) {
 
   $bootstrapPs1Content += @"
 
-  Write-Host @'
-
-  --> Enabling LocalManifest Setting
-  
-  '@
 winget settings --enable LocalManifestFiles
 
-Write-Host @'
+  Write-Host @'
 
 --> Installing the Manifest $manifestFileName
 
