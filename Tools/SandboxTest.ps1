@@ -186,6 +186,14 @@ if (-Not [String]::IsNullOrWhiteSpace($Manifest)) {
   $manifestPathInSandbox = Join-Path -Path $desktopInSandbox -ChildPath (Join-Path -Path $tempFolderName -ChildPath $manifestFileName)
 
   $bootstrapPs1Content += @"
+
+  Write-Host @'
+
+  --> Enabling LocalManifest Setting
+  
+  '@
+winget settings --enable LocalManifestFiles
+
 Write-Host @'
 
 --> Installing the Manifest $manifestFileName
