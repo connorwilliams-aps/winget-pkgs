@@ -102,7 +102,7 @@ $ProgressPreference = $oldProgressPreference
 $vcLibsUwp = @{
   fileName = 'Microsoft.VCLibs.x64.14.00.Desktop.appx'
   url      = 'https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx'
-  hash     = '6602159c341bafea747d0edf15669ac72df8817299fbfaa90469909e06794256'
+  hash     = 'A39CEC0E70BE9E3E48801B871C034872F1D7E5E8EEBE986198C019CF2C271040'
 }
 
 $dependencies = @($desktopAppInstaller, $vcLibsUwp)
